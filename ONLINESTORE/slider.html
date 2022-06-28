@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <style> 
+    .navbar {
+      margin-bottom: 2px;
+      border-radius: 0;
+	  position: sticky;
+	  top: 0;
+    }
+    
+    .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	
+	.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}	
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #F9CBCB;
+}
+.button2:hover {
+  background-color: #F9CBCB;
+  color: white;
+}
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+.button3:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+	
+	
+  </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+	<li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="z1.jpg" alt="Chania">
+      <div class="carousel-caption">
+        <h3><b>Gamers Life</b></h3>
+        <p><b>And the game begins A new</b></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="z2.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        <h3><b>Intel</b></h3>
+        <p><b>Gamers Choice</b></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="z3.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3><b>With advanced System</b></h3>
+        <p><b>Watercooled PC avaliable</b></p>
+      </div>
+    </div>
+  
+	 <div class="item">
+      <img src="z4.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3><b>Powerful Headphone</b></h3>
+        <p><b>with Deep Bass</b></p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header ">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse " id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+		
+		<li class="dropdown">
+			<a href="#" data-toggle="dropdown" class="dropdown-toggle">Products <b
+			class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<li><a href="#processor">Processor</a></li>
+				<li><a href="#ram">Ram</a></li>
+				<li><a href="#graphic10">Graphic Card 10 series</a></li>
+				<li><a href="#graphic20">Graphic Card 20 series</a></li>
+			</ul>
+				
+        <li><a href="#processor">Deals</a></li>
+        <li><a href="#">Stores</a></li>
+        <li><a href="#con">Contact</a></li>
+		<form class="navbar-form navbar-left" action="/action_page.php">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+				<button class="btn btn-default" type="submit">
+				<li class="glyphicon glyphicon-search" ></li>
+			</div>
+		</form>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+		
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<hr>
+<p> <a name="processor"></p>    
+    <p><center><h1>Processor</h1></center></p> 
+ 
+<center>
+ 
+<hr>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">i3 Processor 8th Gen 3.6 GHz</div>
+        <div class="panel-body"><img src="i3.jpg" class="img-responsive"  alt="Image" width="250" height="150"></div>
+        <div class="panel-footer"><b>Price: &#x20b9 11,700.00</b>  <button class="button button1">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">i5 Processor 8th Gen 4.3 GHz</div>
+        <div class="panel-body"><img src="i5.jpg" class="img-responsive" alt="Image" width="250" height="150"></div>
+        <div class="panel-footer"><b>Price: &#x20b9 25,900.00 </b> <button class="button button2">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">i7 Processor 8th Gen 4.7GHz</div>
+        <div class="panel-body"><img src="i7.jpg" class="img-responsive" alt="Image" width="250" height="150"></div>
+        <div class="panel-footer"><b>Price: &#x20b9 36,700.00 </b> <button class="button button3">Buy Now</button></div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<hr>
+<p> <a name="ram"></p>    
+    <p><center><h1>Ram</h1></center></p> 
+ 
+<center>
+ 
+<hr>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Corsair ddr3 Ram 8GB Speed: 1333MHz</div>
+        <div class="panel-body"><img src="r1.jpg" class="img-responsive"  alt="Image" width="222" height="150"></div>
+        <div class="panel-footer"><b>Price: &#x20b9 4,500.00 </b> <button class="button button1">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Hyperx furry ddr4 ram 8GB Speed: 2133 MHz</div>
+        <div class="panel-body"><img src="r2.jpg" class="img-responsive" alt="Image" width="222" height="150"></div>
+        <div class="panel-footer"><b>Price: &#x20b9 7,100.00</b>  <button class="button button2">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Aorus ddr4 RGB ram 8GB Speed: 3200MHz</div>
+        <div class="panel-body"><img src="r3.jpg" class="img-responsive" alt="Image" width="800" height="150"></div>
+        <div class="panel-footer"><b>Price: &#x20b9 11,700.00 </b> <button class="button button3">Buy Now</button></div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<hr>
+<p> <a name="graphic10"></p>    
+    <p><center><h1>Graphic Card 10 series</h1></center></p> 
+ 
+<center>
+ 
+<hr>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">ROG GeForce GTX 1070 8GB ddr5</div>
+        <div class="panel-body"><img src="g1.jpg" class="img-responsive" alt="Image" width="280" height="150"></div>
+        <div class="panel-footer"><b>Price: &#x20b9 64,399.00</b>  <button class="button button1">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">MSI GeForce GTX 1080 8GB ddr5</div>
+        <div class="panel-body"><img src="g2.jpg" class="img-responsive" alt="Image" width="300" height="150"></div>
+        <div class="panel-footer"><b>Price: &#x20b9 85,000.00 </b> <button class="button button2">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">ROG GeForce GTX 1080ti OC 11GB ddr5</div>
+        <div class="panel-body"><img src="g3.jpg" class="img-responsive" alt="Image" width="245" height="150"></div>
+        <div class="panel-footer"><b>Price: &#x20b9 150,000.00  </b><button class="button button3">Buy Now</button></div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+<hr>
+<p> <a name="graphic20"></p>    
+    <p><center><h1>Graphic Card 20 series</h1></center></p> 
+ 
+<center>
+ 
+<hr>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Nvidia Geforce RTX 2080 8GB ddr5</div>
+        <div class="panel-body"><img src="2080.jpg" class="img-responsive" alt="Image" width="250" height="150"></div>
+        <div class="panel-footer"><b>Price: &#x20b9 57,000.00  <button class="button button1">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Nvidia Geforce RTX 2080ti 11GB ddr5</div>
+        <div class="panel-body"><img src="2080tii.jpg" class="img-responsive" alt="Image" width="280" height="150"></div>
+        <div class="panel-footer"><b>Price: &#x20b9 86,000.00  <button class="button button2">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Nvidia Geforce RTX Titan 24GB ddr5</div>
+        <div class="panel-body"><img src="rtx.jpg" class="img-responsive" alt="Image" width="255" height="150"></div>
+        <div class="panel-footer"><b>Price: &#x20b9 180,000.00   <button class="button button3">Buy Now</button></div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+<p> <a name="con"></p> 
+
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+	<h4><p><b>Contact:</b>+971 1234567</p></h4>
+	<h4><p><b>E-mail:</b><a href="majumdarabhishek78@gmail.com">onlinestore@gmail.com</a></p></h4>
+  </form>
+</footer>
+
+</body>
+</html>

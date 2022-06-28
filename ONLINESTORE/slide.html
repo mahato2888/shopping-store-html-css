@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <style> 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+	  position: sticky;
+	  top: 0;
+    }
+    
+    .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	.container {
+  position: relative;
+  width: 70%;
+}
+
+
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}	
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 250
+  height: 150;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, -10%);
+  -ms-transform: translate(-0%, -0%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.5;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+	<h1>Abhi & Sumukh</h1>
+    <h1>Online Gaming Accessories Store</h1>      
+    <p>Mission, Vission & Values</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+		<li class="dropdown">
+		<a href="#" data-toggle="dropdown" class="dropdown-toggle">Products <b
+		class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<li><a href="#processor">Processor</a></li>
+				<li><a href="#ram">Ram</a></li>
+				<li><a href="#graphic10">Graphic Card 10 series</a></li>
+				<li><a href="#graphic20">Graphic Card 20 series</a></li>
+			</ul>
+        <li><a href="#deals">Deals</a></li>
+        <li><a href="#">Stores</a></li>
+        <li><a href="#">Contact</a></li>
+		<form class="navbar-form navbar-left" action="/action_page.php">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+				<button class="btn btn-default" type="submit">
+				<li class="glyphicon glyphicon-search" ></li>
+			</div>
+		</form>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+		
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<hr>
+<p> <a name="processor"></p>    
+    <p><center><h1>Processor</h1></center></p> 
+ 
+<center>
+ 
+<hr>
+
+<hr>
+<p> <a name="deals"></p>    
+ 
+<center>
+ 
+<hr>
+
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">i3 Processor</div>
+        <div class="panel-body"><img src="i3.jpg" class="img-responsive"  alt="Image" width="250" height="150"></div>
+        <div class="panel-footer">Buy 3 processor get 20% OFF  <button class="button button3">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">i5 Processor</div>
+		<div class="container">
+			<img src="i5.jpg" alt="Avatar" class="image">
+			<div class="overlay">
+				<div class="text">HELLO I5</div>
+			</div>
+		</div>
+		
+        <div class="panel-footer">Buy 2 processor get 20% OFF</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">i7 Processor</div>
+        <div class="panel-body"><img src="i7.jpg" class="img-responsive" alt="Image" width="250" height="150"></div>
+        <div class="panel-footer">Buy 3 processor get 50% OFF</div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<hr>
+<p> <a name="ram"></p>    
+    <p><center><h1>Ram</h1></center></p> 
+ 
+<center>
+ 
+<hr>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Corsair ddr3 Ram 8GB</div>
+        <div class="panel-body"><img src="r1.jpg" class="img-responsive"  alt="Image" width="222" height="150"></div>
+        <div class="panel-footer">Buy 3 denim get 1 FREE</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Hyperx furry ddr4 ram 8GB</div>
+        <div class="panel-body"><img src="r2.jpg" class="img-responsive" alt="Image" width="222" height="150"></div>
+        <div class="panel-footer">Buy 2 shirts and get a gift card</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Aorus ddr4 RGB ram 8GB</div>
+        <div class="panel-body"><img src="r3.jpg" class="img-responsive" alt="Image" width="800" height="150"></div>
+        <div class="panel-footer">Buy 5 mobiles accessories and get a gift card</div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<hr>
+<p> <a name="graphic10"></p>    
+    <p><center><h1>Graphic Card 10 series</h1></center></p> 
+ 
+<center>
+ 
+<hr>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">ROG GeForce GTX 1070 8GB ddr5</div>
+        <div class="panel-body"><img src="g1.jpg" class="img-responsive" alt="Image" width="280" height="150"></div>
+        <div class="panel-footer">BUY GAMEING ACCESSORIES AT 50% OFF</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">MSI GeForce GTX 1080 8GB ddr5</div>
+        <div class="panel-body"><img src="g2.jpg" class="img-responsive" alt="Image" width="300" height="150"></div>
+        <div class="panel-footer">LAPTOP BAGS AT 80% OFF</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">ROG GeForce GTX 1080ti 11GB ddr5</div>
+        <div class="panel-body"><img src="g3.jpg" class="img-responsive" alt="Image" width="245" height="150"></div>
+        <div class="panel-footer">Hurry Up! Only 2 left</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+<hr>
+<p> <a name="graphic20"></p>    
+    <p><center><h1>Graphic Card 20 series</h1></center></p> 
+ 
+<center>
+ 
+<hr>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">MONDAY DEAL</div>
+        <div class="panel-body"><img src="GAMING.jpg" class="img-responsive" alt="Image" width="300" height="150"></div>
+        <div class="panel-footer">BUY GAMEING ACCESSORIES AT 50% OFF</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">TEUSDAY DEAL</div>
+        <div class="panel-body"><img src="BAGS.jpg" class="img-responsive" alt="Image" width="300" height="150"></div>
+        <div class="panel-footer">LAPTOP BAGS AT 80% OFF</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">WEDNESDAY DEAL</div>
+        <div class="panel-body"><img src=".jpg" class="img-responsive" alt="Image" width="300" height="150"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,666 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style> 
+.container2 {
+  position: relative;
+  width: 100%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.red{
+	color: #FF0000;
+}
+.h3{
+	color: #FF0000;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #282828;
+}
+
+.container2:hover .overlay {
+  opacity: 0.8;
+}
+
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+    .navbar {
+      margin-bottom: -10px;
+      border-radius: 0;
+	  position: sticky;
+	  top: 0;
+	  z-index: 1;
+    }
+    
+    .jumbotron {
+      margin-bottom: 0;
+    }
+   
+     footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}	
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #F9CBCB;
+}
+.button2:hover {
+  background-color: #F9CBCB;
+  color: white;
+}
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+.button3:hover {
+  background-color: #4CAF50;
+  color: white;
+}	
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  padding:15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #C7C7C7;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+	
+	
+	
+  </style>
+</head>
+<body>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+	<li data-target="#myCarousel" data-slide-to="3"></li>
+	<li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="b1.jpg">
+      <div class="carousel-caption">
+        <h3><b>Gamers Life</b></h3>
+        <p><b>And the game begins</b></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="z2.jpg" >
+      <div class="carousel-caption">
+        <h3><b>Cooler Master</b></h3>
+        <p><b>With powerful cooling system</b></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="z3.jpg">
+      <div class="carousel-caption">
+        <h3><b>With advanced feature</b></h3>
+        <p><b>Gaming mouse avaliable</b></p>
+      </div>
+    </div>
+  
+	 <div class="item">
+      <img src="z4.jpg">
+      <div class="carousel-caption">
+        <h3><b>Powerful Headphone</b></h3>
+        <p><b>with Deep Bass</b></p>
+      </div>
+    </div>
+
+	 <div class="item">
+      <img src="z5.jpg">
+      <div class="carousel-caption">
+        <h3><b>Gaming Mechanical Keyboard</b></h3>
+        <p><b>Gaming keyboard avaliable</b></p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header ">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+   </div>
+
+	  <div class="collapse navbar-collapse " id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>	
+		<li class="dropdown">
+			<a  class="dropbtn">Products <b
+				class="caret"></b></a>
+				<ul class="dropdown-content">
+					<a href="#processor">Processor</a>
+					<a href="#ram">Ram</a>
+					<a href="#graphic10">Graphic Card 10 series</a>
+					<a href="#graphic20">Graphic Card 20 series</a>		
+					<a href="#headphone">Gaming Headphone</a>
+					<a href="#keyboard">Gaming keyboard</a>
+					<a href="#mouse">Gaming Mouse</a>	
+					<a href="#cooler">Liquid coolers</a>
+				</ul>
+		
+        <li><a href="#processor">Deals</a></li>
+        <li><a href="#sg">Store</a></li>
+        <li><a href="#con">Contact</a></li>
+		<form class="navbar-form navbar-left" action="/action_page.php">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+				<button class="btn btn-default" type="submit">
+				<li class="glyphicon glyphicon-search" ></li>
+			</div>
+		</form>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+		
+        <li><a href="#sg"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#sg"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>	
+	 
+      </ul></br>
+    </div>
+</div>
+<div class="container" id="processor">    
+
+  
+  </br>
+  <hr>
+    <p ><center><h3 style="color:#0057CD">Processor</h3></center></p> 
+ 
+<center>
+
+<hr>
+
+<div class="container">    
+
+  <div class="row">
+    <div class="col-sm-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">i3 Processor 8th Gen 3.6 GHz</div>
+	<div class="container2">
+        <div class="panel-body">
+    <img src="i3.jpg" class="img-responsive"  alt="Image" width="250" height="150"/>
+		<div class="overlay">
+            <div class="text1">Intel Core i3-8130U with CPU Clock Speed 2.2–3.4 GHz Cache Size 4MB Power_Consumption 15W Number of Cores Dual-core and 2 threads core</div>
+        </div>
+</div>
+</div>
+        <div class="panel-footer"><b> <span class="red">&#x20b9 9,999.00</span><del> &#x20b9 11,700.00</del></b>  <button class="button button1">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">i5 Processor 8th Gen 4.3 GHz</div>
+		<div class="container2">
+			<div class="panel-body">
+		<img src="i5.jpg" class="img-responsive" alt="Image" width="250" height="150"></div>
+		<div class="overlay">
+            <div class="text1">Intel Core i5-8250U with CPU Clock Speed 3.5–4.3 GHz Cache Size 6MB Power_Consumption 15W Number of Cores 4 and 8 threads core</div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 23,999.00</span><del> &#x20b9 25,900.00</del></b>  <button class="button button2">Buy Now</button></div>
+      </div>
+    </div>
+	
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">i7 Processor 8th Gen 4.7GHz</div>
+		<div class="container2">
+			<div class="panel-body">
+		<img src="i7.jpg" class="img-responsive" alt="Image" width="250" height="150"></div>
+		<div class="overlay">
+            <div class="text1">Intel Core i7-8700U with CPU Clock Speed 3.8–4.7 GHz Cache Size 8MB Power_Consumption 15W Number of Cores 6 and 12 threads core</div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 34,999.00</span><del> &#x20b9 36,700.00</del></b>  <button class="button button3">Buy Now</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container" id="ram">    
+
+  
+  </br> <hr>
+    <p><center><h3 style="color:#0057CD">Ram</h3></center></p> 
+ 
+<center>
+
+<hr> 
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Corsair ddr3 Ram 8GB Speed: 1333MHz</div>
+		<div class="container2">
+			<div class="panel-body">
+		<img src="r1.jpg" class="img-responsive"  alt="Image" width="222" height="150"></div>
+		<div class="overlay">
+            <div class="text1">Corsair Vengeance Memory  Configuration:Dual Channel Memory Type:	DDR3SPD  Speed:1333MHz</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 3,999.00</span><del> &#x20b9 4,500.00</del></b>  <button class="button button1">Buy Now</button></div>
+      </div>
+	  
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Hyperx furry ddr4 ram 8GB Speed: 2133 MHz</div>
+		<div class="container2">
+        <div class="panel-body"><img src="r2.jpg" class="img-responsive" alt="Image" width="222" height="150"></div>
+		<div class="overlay">
+            <div class="text1">Hyperx furry Memory  Configuration:Dual Channel Memory Type:	DDR4SPD  Speed:2666MHz</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 5,999.00</span><del> &#x20b9 7,100.00</del></b>  <button class="button button2">Buy Now</button></div>
+      </div>
+	  
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Aorus ddr4 RGB ram 8GB Speed: 3200MHz</div>
+		<div class="container2">
+        <div class="panel-body"><img src="r3.jpg" class="img-responsive" alt="Image" width="800" height="150"></div>
+		<div class="overlay">
+            <div class="text1">Aorus Memory  Configuration:Dual Channel Memory Type:	DDR4SPD  Speed:3200MHz</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 9,999.00</span><del> &#x20b9 11,700.00</del></b>  <button class="button button3">Buy Now</button></div>
+      </div>
+	  
+  </div>
+</div>
+<div class="container" id="graphic10">    
+
+  
+  </br> <hr>
+    <p><center><h3 style="color:#0057CD">Graphic Card 10 Series</h3></center></p> 
+ 
+<center>
+
+<hr> 
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">ROG GeForce GTX 1070 8GB </div>
+		<div class="container2">
+        <div class="panel-body"><img src="g1.jpg" class="img-responsive" alt="Image" width="280" height="150"></div>
+		<div class="overlay">
+            <div class="text1">ROG GeForce GTX 1070 with 8GB ddr5 base_clock:1658MHz and boost_clock:1800MHz for best VR gaming</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 60,999.00</span><del> &#x20b9 64,399.00</del></b>  <button class="button button1">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">MSI GeForce GTX 1080 8GB </div>
+		<div class="container2">
+        <div class="panel-body"><img src="g2.jpg" class="img-responsive" alt="Image" width="300" height="150"></div>
+		<div class="overlay">
+            <div class="text1">MSI GeForce GTX 1080 with 8GB ddr5 base_clock:1733 MHz and boost_clock:1810MHz for best VR gaming experience</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 81,999.00</span><del> &#x20b9 85,900.00</del></b>  <button class="button button2">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">ROG GeForce GTX 1080ti OC 11GB </div>
+		<div class="container2">
+        <div class="panel-body"><img src="g3.jpg" class="img-responsive" alt="Image" width="245" height="150"></div>
+		<div class="overlay">
+            <div class="text1">ROG GeForce GTX 1080ti OC  with 11GB ddr5 base_clock:1850 and boost_clock:1990MHz and excellent performance</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 140,999.00</span><del> &#x20b9 150,000.00</del></b>  <button class="button button3">Buy Now</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container" id="graphic20">    
+
+  
+  </br> <hr>
+    <p><center><h3 style="color:#0057CD">Graphic Card 20 Series</h3></center></p> 
+ 
+<center>
+
+<hr>   
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Nvidia Geforce RTX 2080 8GB ddr5</div>
+		<div class="container2">
+        <div class="panel-body"><img src="2080.jpg" class="img-responsive" alt="Image" width="250" height="150"></div>
+		<div class="overlay">
+	 <div class="text1">Nvidia Geforce RTX 2080 with 8GB ddr5 base_clock:1635MHz and boost_clock:1750MHz and excellent performance</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 54,999.00</span><del> &#x20b9 57,000.00</del></b>  <button class="button button1">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Nvidia Geforce RTX 2080ti 11GB ddr5</div>
+		<div class="container2">
+        <div class="panel-body"><img src="2080tii.jpg" class="img-responsive" alt="Image" width="280" height="150"></div>
+		<div class="overlay">
+	<div class="text1">Nvidia Geforce RTX 2080ti with 11GB ddr5 base_clock:1670MHz and boost_clock:1800MHz andd for best 4K gaming</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 84,999.00</span><del> &#x20b9 86,000.00</del></b>  <button class="button button2">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Nvidia Geforce RTX Titan 24GB ddr5</div>
+		<div class="container2">
+        <div class="panel-body"><img src="rtx.jpg" class="img-responsive" alt="Image" width="255" height="150"></div>
+		<div class="overlay">
+	<div class="text1">ROG GeForce RTX TITAN with 24GB ddr5 base_clock:1850 and boost_clock:1990MHz and for 4K and 8K gaming</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 174,999.00</span><del> &#x20b9 180,000.00</del></b>  <button class="button button3">Buy Now</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container" id="headphone">    
+
+  
+  </br> <hr>
+    <p><center><h3 style="color:#0057CD">Gaming Headphones</h3></center></p> 
+ 
+<center>
+
+<hr>    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">HyperX Cloud Stinger Gaming Headset </div>
+		<div class="container2">
+        <div class="panel-body"><img src="h1.jpg" class="img-responsive" alt="Image" width="297" height="150"></div>
+		<div class="overlay">
+	<div class="text1">HyperX Cloud Stinger Gaming Headset  Swivel-to-mute noise-cancellation microphone with 7.1 channel</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 8,999.00</span><del> &#x20b9 10,000.00</del></b>  <button class="button button1">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Lenovo  Gaming Stereo Headset</div>
+		<div class="container2">
+        <div class="panel-body"><img src="h2.jpg" class="img-responsive" alt="Image" width="195" height="150"></div>
+		<div class="overlay">
+	<div class="text1">Noise cancelling microphone- Cut out background distraction for crisp clear commands and hide the mic for productivity</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 4,599.00</span><del> &#x20b9 5,100.00</del></b>  <button class="button button2">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Cooler Master Masterpulse Gaming Headset</div>
+		<div class="container2">
+        <div class="panel-body"><img src="h3.jpg" class="img-responsive" alt="Image" width="500" height="150"></div>
+		<div class="overlay">
+	<div class="text1">Noise cancelling microphone with mic ON/OFF button and volume button to control volume</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 5,599.00</span><del> &#x20b9 6,000.00</del></b>  <button class="button button3">Buy Now</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container" id="keyboard">    
+
+  
+  </br> <hr>
+    <p><center><h3 style="color:#0057CD">Gaming Keyboards</h3></center></p> 
+ 
+<center>
+
+<hr>    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Lenovo Gx30k04088 Wired Gaming Keyboard </div>
+		<div class="container2">
+        <div class="panel-body"><img src="k1.jpg" class="img-responsive" alt="Image" width="268" height="200"></div>
+	<div class="overlay">
+	<div class="text1">Lenovo Wired Gaming Keyboard with mechanical keys and Anti-ghosting for simultaneous key strokes</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 4,299.00</span><del> &#x20b9 5,500.00</del></b>  <button class="button button1">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Coolermaster  MK750 Mechanical Keyboard </div>
+		<div class="container2">
+        <div class="panel-body"><img src="k2.jpg" class="img-responsive" alt="Image" width="268" height="200"></div>
+	<div class="overlay">
+	<div class="text1">Coolermaster Mechanical Keyboard RGB with smooth illumination and Wrist rest for comfort</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 9,500.00</span><del> &#x20b9 11,500.00</del></b>  <button class="button button2">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Logitech G Pro Mechanical Gaming Keyboard</div>
+		<div class="container2">
+        <div class="panel-body"><img src="k3.jpg" class="img-responsive" alt="Image" width="268" height="200"></div>
+	<div class="overlay">
+	<div class="text1">Logitech G Pro Mechanical Gaming Keyboard with 16.8 Million Colors RGB Backlit Keys and Ultra Portable Design</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 9,500.00</span><del> &#x20b9 11,800.00</del></b>  <button class="button button3">Buy Now</button></div>
+      </div>
+    </div>
+</div>
+</div>
+</div>	
+<div class="container" id="mouse">    
+
+  
+  </br> <hr>
+    <p><center><h3 style="color:#0057CD">Gaming Mouse</h3></center></p> 
+ 
+<center>
+
+<hr>     
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Corsair Scimitar Pro RGB - MMO Gaming Mouse</div>
+		<div class="container2">
+        <div class="panel-body"><img src="m1.jpg" class="img-responsive" alt="Image" width="268" height="200"></div>
+	<div class="overlay">
+	<div class="text1">12 optimized mechanical side buttons, Gaming Grade 16000 DPI,Optical sensor: ultra-accurate and high-speed tracking Engine</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 6,299.00</span><del> &#x20b9 7,000.00</del></b>  <button class="button button1">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Logitech MX Master 2S Wireless Gaming Mouse</div>
+		<div class="container2">
+        <div class="panel-body"><img src="m2.jpg" class="img-responsive" alt="Image" width="268" height="200"></div>
+	<div class="overlay">
+	<div class="text1">Logitech MX Master with rechargeable battery, up to 70 days of power on single charge and Tracks virtually anywhere, even on glass</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 5,999.00</span><del> &#x20b9 7,000.00</del></b>  <button class="button button2">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Logitech G Pro Mechanical Gaming Keyboard</div>
+		<div class="container2">
+        <div class="panel-body"><img src="m3.jpg" class="img-responsive" alt="Image" width="268" height="200"></div>
+	<div class="overlay">
+	<div class="text1">Programmable 12-button design optimized for gaming,play in wired or wireless modes, Built-in flash memory to save your profiles</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 11,999.00</span><del> &#x20b9 14,000.00</del></b>  <button class="button button3">Buy Now</button></div>
+      </div>
+    </div>
+</div>
+</div>
+</div>	
+<div class="container" id="cooler">    
+
+  
+  </br> <hr>
+    <p><center><h3 style="color:#0057CD">Liquid Coolers</h3></center></p> 
+ 
+<center>
+
+<hr>  
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">MasterLiquid Pro 280 RGB</div>
+		<div class="container2">
+        <div class="panel-body"><img src="c1.gif" class="img-responsive" alt="Image" width="200" height="200"></div>
+	<div class="overlay">
+	<div class="text1">Speed:650 ~ 2000 RPM (PWM) ± 10%, CPU Socket Compatibility : Intel and AMD</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 10,999.00</span><del> &#x20b9 12,000.00</del></b>  <button class="button button1">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">MasterLiquid ML240L RGB</div>
+		<div class="container2">
+        <div class="panel-body"> <img src="c2.gif" class="img-responsive" alt="Image" width="280" height="200"></div>
+	<div class="overlay">
+	<div class="text1">Speed:700 ~ 2500 RPM (PWM) ± 10%, CPU Socket Compatibility : Intel and AMD</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 11,999.00</span><del> &#x20b9 16,000.00</del></b>  <button class="button button2">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Cooler Master MLX MasterLiquid </div>
+		<div class="container2">
+        <div class="panel-body"><img src="c5.gif" class="img-responsive" alt="Image" width="195" height="200"></div>
+	<div class="overlay">
+	<div class="text1">Controlled LEDs Triple 120mm ARGB Air Balance MF</div>
+        </div>
+		</div>
+        <div class="panel-footer"><b><span class="red">&#x20b9 18,999.00</span><del> &#x20b9 22,000.00</del></b>  <button class="button button3">Buy Now</button></div>
+      </div>
+    </div>
+</div>
+</div>
+</div>	<br><br>
+
+<p> <a name="con"></p> 
+
+<footer class="container-fluid text-center">
+  <p>Sumukh & abhishek  &#x24B8 Copyright</p>  
+  <form class="form-inline">
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+	<h4><p><b>Contact:</b>+971 1234567</p></h4>
+	<h4><p><b>E-mail:</b><a href="onlinestore@gmail.com">onlinestore@gmail.com</a></p></h4>
+  </form>
+</footer>
+
+</body>
+</html>
